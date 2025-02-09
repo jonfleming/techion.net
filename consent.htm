@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Consent Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .consent-box {
+            margin: 20px 0;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Consent to Receive SMS Messages</h2>
+        <p><strong>Business Information:</strong></p>
+        <p>
+            Techion.net<br>
+            800 5th Ave, Suite 101-205<br>
+            Seattle, WA 98104<br>
+            Contact Number: 424-256-8399
+        </p>
+
+        <form action="https://price-notifier.renderforestsites.com/" method="GET">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Mobile Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email Address (optional):</label>
+            <input type="email" id="email" name="email">
+
+            <div class="consent-box">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">
+                    I consent to receive text messages (SMS) from Techion.net at the provided number. I understand that message and data rates may apply, and I can opt out at any time by replying "STOP." Consent is not a condition of purchase.
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Consent</button>
+        </form>
+    </div>
+</body>
+</html>
